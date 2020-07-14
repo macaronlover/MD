@@ -43,7 +43,7 @@
                         </StackPanel>
 
                         <Button Grid.Column="1" 
-                                x:Name="BtnMoreMasterItem" 
+                                x:Name="MoreBtn" 
                                 Background="Transparent" 
                                 Content="&#xE712;" 
                                 FontFamily="Segoe MDL2 Assets"
@@ -51,8 +51,7 @@
                                 VerticalAlignment="Top"
                                 Margin="10" 
                                 Padding="10" 
-                                Visibility="{Binding ShowButton, Converter={StaticResource MyBoolToVisibilityConverter}}"
-                                Click="BtnMoreMasterItem_Click"/>
+                                Visibility="{Binding ShowButton, Converter={StaticResource MyBoolToVisibilityConverter}}"/>
                     </Grid>
                 </DataTemplate>
             </controls:MasterDetailsView.ItemTemplate>
